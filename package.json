@@ -1,0 +1,42 @@
+{
+  "name": "ReactPlayground",
+  "version": "0.0.1",
+  "description": "React playground",
+  "main": "index.js",
+  "devDependencies": {
+    "bootstrap": "*",
+    "browserify": "*",
+    "chai": "*",
+    "chai-as-promised": "*",
+    "coffee-reactify": "*",
+    "coffee-script": "*",
+    "envify": "*",
+    "gulp": "^3.8.*",
+    "gulp-coffee": "*",
+    "gulp-sloc": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*",
+    "karma": "*",
+    "karma-browserify": "*",
+    "karma-chai-plugins": "*",
+    "karma-coverage": "*",
+    "karma-mocha": "*",
+    "karma-mocha-reporter": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-sinon": "*",
+    "lodash": "*",
+    "mocha": "*",
+    "phantomjs": "*",
+    "react": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*"
+  },
+  "author": "ekazakov",
+  "dependencies": {
+    "es6-promises": "^1.0.8",
+    "reactify": "*"
+  }
+}
