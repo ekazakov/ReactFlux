@@ -24,6 +24,9 @@ srcIndexPath = "./node_modules/app/index.js"
 jsLibs = () ->
     browserify(["react"], {debug: true})
         .require("react")
+        .require("react/addons")
+        .require("react-router-component")
+        .require("lodash")
         .bundle()
         .pipe source "libs.js"
         .pipe gulp.dest "./js/"
@@ -45,6 +48,9 @@ js = () ->
     browserify srcIndexPath, browserifyOpts
         .transform "reactify", {everything: true, harmony: true}
         .external "react"
+        .external "react/addons"
+        .external "react-router-component"
+        .external "lodash"
         .bundle()
         .on "error", onError
         .pipe source("index.js")
@@ -58,6 +64,9 @@ watch = () ->
     bundler = watchify browserify(srcIndexPath, browserifyOpts)
         .transform "reactify", {everything: true, harmony: true}
         .external "react"
+        .external "react/addons"
+        .external "react-router-component"
+        .external "lodash"
 
     reubundel = makeRebundle bundler
 
